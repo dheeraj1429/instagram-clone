@@ -1,0 +1,6 @@
+.SearchDiv .SearchGroup input {
+  border: solid 1px rgba(var(--b6a, 219, 219, 219), 1);
+  padding: 0.3rem 2rem 0.3rem 1rem;
+  border-radius: 4px;
+  outline: none;
+}

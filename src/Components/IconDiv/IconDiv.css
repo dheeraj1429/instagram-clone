@@ -1,0 +1,12 @@
+.Icon__Div {
+  display: flex;
+  align-items: center;
+}
+
+.Icon__Div svg {
+  margin-right: 1.5rem;
+}
+
+.Icon__Div i {
+  font-size: 1.5rem;
+}

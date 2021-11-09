@@ -1,0 +1,35 @@
+.CommentsDiv {
+  border: 1px solid rgba(239, 239, 239);
+  padding: 0.5rem;
+}
+
+.Comment__Div__Input {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Comment__Icon_Div {
+  width: 40px;
+  height: 100%;
+  display: flex;
+}
+
+.Comment__Div__Input input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+}
+
+.Comment__Div__Input .PostYourComment p {
+  color: var(--darkBlue);
+  font-weight: 600;
+}
+
+.Comments {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}

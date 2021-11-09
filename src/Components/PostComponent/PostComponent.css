@@ -1,0 +1,52 @@
+.Post {
+  margin-bottom: 20px;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+
+.PostIconWithContent {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.PostIconWithContent .UserAvatarDiv {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.UserAvatarDiv img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.PostIconWithContent .userContent h3 {
+  font-size: 1rem;
+  color: var(--headingcolor);
+}
+
+.PostIconWithContent .userContent p {
+  color: var(--textColor);
+  font-size: 0.8rem;
+}
+
+.PostImgDiv {
+  width: 100%;
+}
+
+.PostImgDiv img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.PostCaption p {
+  color: var(--textColor);
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}

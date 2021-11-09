@@ -1,0 +1,13 @@
+.Navbar {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  position: sticky;
+  top: 0;
+  background-color: var(--mainColor);
+}
+
+.Navbar__Items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
