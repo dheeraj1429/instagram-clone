@@ -33,3 +33,18 @@
   margin-left: 1rem;
   margin-bottom: 0.5rem;
 }
+
+.UserComments {
+  display: flex;
+  align-items: center;
+  margin: 0.3rem 0;
+}
+
+.UserComments h3 {
+  font-size: 0.8rem;
+}
+
+.UserComments p {
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+}

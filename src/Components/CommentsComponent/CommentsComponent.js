@@ -15,13 +15,20 @@ function CommentsComponent({ targetId }) {
       .onSnapshot((snapShot) => {
         setComment(snapShot.docs.map((msg) => msg.data()));
       });
-
-    console.log(Comment);
   }, []);
 
   return (
     <div>
-      <div className="Comments">{Comment ? Comment.map((el) => <p>{el.Comment}</p>) : null}</div>
+      <div className="Comments">
+        {Comment
+          ? Comment.map((el) => (
+              <div className="UserComments">
+                <h3>{el.user}</h3>
+                <p>{el.Comment}</p>
+              </div>
+            ))
+          : null}
+      </div>
       <div className="CommentsDiv">
         <div className="Comment__Div__Input">
           <div className="Comment__Icon_Div">

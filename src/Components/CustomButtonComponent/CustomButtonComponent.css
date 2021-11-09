@@ -1,0 +1,12 @@
+.CustomButton {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.SignInWithGoogleBtn {
+  background: #3897f0;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
