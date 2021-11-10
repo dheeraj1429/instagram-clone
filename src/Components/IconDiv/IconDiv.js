@@ -37,7 +37,10 @@ function IconDiv() {
           <PopUpComponent className={ShowPopUp} />
         </div>
       ) : (
-        <i class="fas fa-user-circle"></i>
+        <div className="UserProfileDiv">
+          <i class="fas fa-user-circle" onClick={() => (ShowPopUp === false ? setShowPopup(true) : setShowPopup(false))}></i>
+          <PopUpComponent className={ShowPopUp} />
+        </div>
       )}
     </div>
   );

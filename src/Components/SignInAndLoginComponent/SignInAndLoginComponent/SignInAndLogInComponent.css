@@ -1,0 +1,30 @@
+.SignInAndLogInContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Do_Not_Have_account {
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid var(--lightBoder);
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Do_Not_Have_account p {
+  color: var(--headingcolor);
+  font-size: 0.9rem;
+}
+
+.Do_Not_Have_account p span {
+  color: var(--darkBlue);
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.3rem;
+}

@@ -21,6 +21,10 @@ code {
   --textColor: rgba(38, 38, 38, 1);
   --mainColor: #fff;
   --darkBlue: rgb(19, 158, 250);
+  --DividerColor: rgba(219, 219, 219);
+  --darkBlue: #0095f6;
+  --lightBlue: #b2dffc;
+  --lightBoder: #e1e1e1;
 }
 
 .Container {
