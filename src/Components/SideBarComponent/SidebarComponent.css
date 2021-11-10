@@ -1,7 +1,17 @@
 .SideBar {
   width: 100%;
   height: 50vh;
-  border: 1px solid red;
   position: sticky;
   top: 53px;
+  z-index: -1;
+}
+
+.OtherUser .Suggesstion {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--headingcolor);
+}
+
+.OtherUser {
+  padding: 0.5rem 0;
 }

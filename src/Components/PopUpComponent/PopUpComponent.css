@@ -1,0 +1,35 @@
+.PopUpDiv {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 40px;
+  right: -30px;
+  box-shadow: 0 0 10px rgb(192, 192, 192);
+  background: rgba(var(--d87, 255, 255, 255), 1);
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  display: none;
+}
+
+.ShowPopUp {
+  display: block;
+}
+
+.PopUpDiv p {
+  width: max-content;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.ArrowDiv {
+  width: 0px;
+  height: 0px;
+  border: 10px solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: var(--mainColor);
+  position: absolute;
+  top: -20px;
+  right: 30px;
+}
