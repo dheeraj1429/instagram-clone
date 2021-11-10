@@ -25,6 +25,7 @@ function App() {
         setUser({ currentUser: userAuth });
         dispatch(setUserData(userAuth));
         CreateUserProfileDocument(userAuth);
+        console.log(userAuth);
       }
     });
   }, []);
