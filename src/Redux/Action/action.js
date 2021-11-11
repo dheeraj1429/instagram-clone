@@ -6,3 +6,10 @@ export const setUserData = (data) => {
     payload: data,
   };
 };
+
+export const hideAndShowModel = (data) => {
+  return {
+    type: ActionType.HIDE_MODEL,
+    payload: data,
+  };
+};

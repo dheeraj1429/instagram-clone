@@ -5,6 +5,7 @@
 
 .Icon__Div svg {
   margin-right: 1.5rem;
+  cursor: pointer;
 }
 
 .Icon__Div i {
@@ -12,8 +13,8 @@
 }
 
 .UserProfileDiv {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   position: relative;
 }

@@ -27,6 +27,7 @@
 .Comment__Div__Input .PostYourComment p {
   color: var(--darkBlue);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .Comments {

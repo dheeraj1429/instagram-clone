@@ -1,11 +1,31 @@
 import React, { useEffect, useState } from "react";
 
 import { firestore } from "../Firebase/Firebase.util";
+import { useSelector } from "react-redux";
 
 import "./CommentsComponent.css";
 
-function CommentsComponent({ targetId }) {
+function CommentsComponent({ targetId, user }) {
   const [Comment, setComment] = useState([]);
+  const [Massage, setMassage] = useState();
+  const selector = useSelector((state) => state.user.userData);
+
+  const { displayName } = selector;
+
+  const MassageHandler = (e) => {
+    setMassage(e.target.value);
+  };
+
+  const PostCommentHandler = function () {
+    if (Massage.length > 1) {
+      firestore.collection("posts").doc(targetId).collection("Comments").add({
+        Comment: Massage,
+        user: displayName,
+      });
+
+      setMassage("");
+    }
+  };
 
   useEffect(() => {
     firestore
@@ -37,9 +57,9 @@ function CommentsComponent({ targetId }) {
               <path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path>
             </svg>
           </div>
-          <input type="text" placeholder="Add a comment" />
+          <input type="text" placeholder="Add a comment" name="text" value={Massage} onChange={MassageHandler} />
           <div className="PostYourComment">
-            <p>Post</p>
+            <p onClick={PostCommentHandler}>Post</p>
           </div>
         </div>
       </div>
