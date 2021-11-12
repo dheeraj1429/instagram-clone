@@ -39,7 +39,7 @@ function App() {
           <NavbarComponent />
 
           <Switch>
-            <Route exact path="/" component={HomePage} />
+            <Route exact path="/instagram-clone" component={HomePage} />
           </Switch>
         </>
       )}
