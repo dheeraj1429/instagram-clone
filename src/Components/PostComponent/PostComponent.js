@@ -7,7 +7,7 @@ import "./PostComponent.css";
 
 function PostComponent({ data, id }) {
   const selector = useSelector((state) => state.user.userData);
-  const { Caption, image, username, Place } = data;
+  const { Caption, image, username, Place, userProfile } = data;
   const { photoURL } = selector;
 
   return (
@@ -17,7 +17,7 @@ function PostComponent({ data, id }) {
           {photoURL == null ? (
             <img src="https://images.unsplash.com/photo-1532202802379-df93d543bac3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" />
           ) : (
-            <img src={photoURL} />
+            <img src={userProfile} />
           )}
         </div>
         <div className="userContent">

@@ -13,6 +13,7 @@ import { setUserData } from "./Redux/Action/action";
 import "./App.css";
 
 function App() {
+  const [UserProfile, setUserProfile] = useState("");
   const dispatch = useDispatch();
 
   const [User, setUser] = useState({

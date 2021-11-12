@@ -14,7 +14,7 @@ function PostUploadComponent() {
   const [ImageSelect, setImageSelect] = useState(null);
   const [CaptionContent, setCaptionContent] = useState("");
 
-  const { displayName } = selector;
+  const { displayName, photoURL } = selector;
 
   const selectImageHandler = (e) => {
     setImageSelect(e.target.files);
@@ -36,6 +36,7 @@ function PostUploadComponent() {
             Caption: CaptionContent,
             image: res,
             username: displayName,
+            userProfile: photoURL,
           });
         });
     });
