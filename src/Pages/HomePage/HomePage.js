@@ -12,7 +12,7 @@ function HomePage() {
 
   useEffect(() => {
     const uploadData = storage.ref(`images/${"avatar.jpeg"}`).put(Image);
-
+    console.log("snapShot:");
     firestore.collection("posts").onSnapshot((snapShot) => {
       setPost(
         snapShot.docs.map((el) => ({
